@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Master Web Development - Your Path to Becoming a Pro!</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        /* Basic Reset & Body Styles */
+        body {
+            margin: 0;
+            font-family: 'Poppins', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f4f7f6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        /* Header */
+        header {
+            background-color: #007bff;
+            color: #fff;
+            padding: 40px 0;
+            text-align: center;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.8em;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 1.2em;
+            margin-top: 10px;
+            opacity: 0.9;
+        }
+
+        /* Sections */
+        section {
+            padding: 50px 0;
+            text-align: center;
+        }
+
+        section:nth-of-type(even) {
+            background-color: #e9ecef;
+        }
+
+        h2 {
+            color: #007bff;
+            font-size: 2.2em;
+            margin-bottom: 25px;
+            position: relative;
+            display: inline-block;
+        }
+
+        h2::after {
+            content: '';
+            position: absolute;
+            width: 60px;
+            height: 4px;
+            background-color: #007bff;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .features-grid, .why-us-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+            text-align: left;
+        }
+
+        .feature-item, .why-us-item {
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+        }
+
+        .feature-item:hover, .why-us-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .feature-item h3, .why-us-item h3 {
+            color: #007bff;
+            font-size: 1.5em;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+
+        .feature-item ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .feature-item ul li {
+            margin-bottom: 10px;
+            padding-left: 25px;
+            position: relative;
+        }
+
+        .feature-item ul li::before {
+            content: '✓';
+            color: #28a745;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+
+        /* Call to Action */
+        .cta-section {
+            background-color: #007bff;
+            color: #fff;
+            padding: 60px 0;
+        }
+
+        .cta-section p {
+            font-size: 1.5em;
+            margin-bottom: 30px;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: #28a745;
+            color: #fff;
+            padding: 15px 30px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-size: 1.2em;
+            font-weight: bold;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        .cta-button:hover {
+            background-color: #218838;
+            transform: translateY(-2px);
+        }
+
+        /* Footer */
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 30px 0;
+            font-size: 0.9em;
+        }
+
+        footer p {
+            margin: 0;
+            opacity: 0.8;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="container">
+            <h1>Master Web Development: Your Path to Becoming a Pro!</h1>
+            <p>Are you ready to **build amazing websites and web applications**? Our comprehensive web development course is designed to take you from beginner to job-ready developer, quickly and effectively.</p>
+        </div>
+    </header>
+
+    <section id="what-you-learn">
+        <div class="container">
+            <h2>What You'll Learn</h2>
+            <div class="features-grid">
+                <div class="feature-item">
+                    <h3>Front-End Essentials</h3>
+                    <ul>
+                        <li>Dive into **HTML5, CSS3, and JavaScript**</li>
+                        <li>Create beautiful and interactive user interfaces.</li>
+                    </ul>
+                </div>
+                <div class="feature-item">
+                    <h3>Back-End Power</h3>
+                    <ul>
+                        <li>Master server-side development with popular technologies</li>
+                        <li>Choose your specialization: **Node.js, Python, or PHP**!</li>
+                    </ul>
+                </div>
+                <div class="feature-item">
+                    <h3>Database Management</h3>
+                    <ul>
+                        <li>Learn to work with databases like **MongoDB or SQL**</li>
+                        <li>Store and manage your application's data.</li>
+                    </ul>
+                </div>
+                <div class="feature-item">
+                    <h3>Frameworks & Libraries</h3>
+                    <ul>
+                        <li>Get hands-on experience with industry-standard tools</li>
+                        <li>**React, Angular, Vue.js** for front-end</li>
+                        <li>**Express.js, Django, or Laravel** for back-end.</li>
+                    </ul>
+                </div>
+                <div class="feature-item">
+                    <h3>Deployment & Git</h3>
+                    <ul>
+                        <li>Understand how to deploy your projects live</li>
+                        <li>Collaborate efficiently using **Git and GitHub**.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="why-choose-us">
+        <div class="container">
+            <h2>Why Choose Us?</h2>
+            <div class="why-us-grid">
+                <div class="why-us-item">
+                    <h3>Project-Based Learning</h3>
+                    <p>Build a strong portfolio by working on real-world projects from day one.</p>
+                </div>
+                <div class="why-us-item">
+                    <h3>Expert Instructors</h3>
+                    <p>Learn from experienced developers who are passionate about teaching.</p>
+                </div>
+                <div class="why-us-item">
+                    <h3>Flexible Learning</h3>
+                    <p>Study at your own pace with our on-demand video lectures and coding exercises.</p>
+                </div>
+                <div class="why-us-item">
+                    <h3>Community Support</h3>
+                    <p>Join our thriving online community and get help whenever you need it.</p>
+                </div>
+                <div class="why-us-item">
+                    <h3>Career Guidance</h3>
+                    <p>Get personalized support for resume building and interview preparation to land your dream job.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="container">
+            <p>Ready to start your journey?</p>
+            <p>Don't miss out on the opportunity to kickstart your career in web development. The demand for skilled web developers is booming, and this course will give you the edge you need.</p>
+            <a href="#" class="cta-button">Enroll Now and Get 20% Off Your First Month!</a>
+            <p style="font-size: 0.8em; margin-top: 20px;">*Limited-time offer. Terms and conditions apply.</p>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 Web Dev Pro Course. All rights reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
