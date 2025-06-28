@@ -39,7 +39,30 @@
             font-size: 1.2em;
             margin-top: 10px;
             opacity: 0.9;
+            margin-bottom: 30px; /* Added margin to separate text from the new button */
         }
+
+        /* New Top Button Style */
+        .top-cta-button {
+            display: inline-block;
+            background-color: #28a745; /* Green color for the button */
+            color: #fff;
+            padding: 15px 35px;
+            border-radius: 50px; /* More rounded corners */
+            text-decoration: none;
+            font-size: 1.3em; /* Slightly larger font */
+            font-weight: 700; /* Bolder text */
+            transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25); /* More pronounced shadow */
+            margin-top: 20px; /* Space above the button */
+        }
+
+        .top-cta-button:hover {
+            background-color: #218838; /* Darker green on hover */
+            transform: translateY(-3px); /* Lift effect on hover */
+            box-shadow: 0 9px 25px rgba(0, 0, 0, 0.3); /* Larger shadow on hover */
+        }
+
 
         /* Sections */
         section {
@@ -116,7 +139,7 @@
             left: 0;
         }
 
-        /* Call to Action */
+        /* Call to Action (Bottom Button) */
         .cta-section {
             background-color: #007bff;
             color: #fff;
@@ -167,6 +190,7 @@
         <div class="container">
             <h1>Master Web Development: Your Path to Becoming a Pro!</h1>
             <p>Are you ready to **build amazing websites and web applications**? Our comprehensive web development course is designed to take you from beginner to job-ready developer, quickly and effectively.</p>
+            <a href="#" class="top-cta-button">Start Your Free Trial Today!</a>
         </div>
     </header>
 
@@ -244,8 +268,8 @@
 
     <section class="cta-section">
         <div class="container">
-            <p>Ready to start your journey?</p>
-            <p>Don't miss out on the opportunity to kickstart your career in web development. The demand for skilled web developers is booming, and this course will give you the edge you need.</p>
+            <p>Ready to kickstart your career in web development?</p>
+            <p>The demand for skilled web developers is booming, and this course will give you the edge you need.</p>
             <a href="#" class="cta-button">Enroll Now and Get 20% Off Your First Month!</a>
             <p style="font-size: 0.8em; margin-top: 20px;">*Limited-time offer. Terms and conditions apply.</p>
         </div>
